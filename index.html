@@ -1,0 +1,256 @@
+<div style='width:40%;height:35%;max-width:100%'>
+    <div id='game'></div>
+</div>
+
+<script type='text/javascript'>
+    EJS_player = '#game';
+    
+    // Can also be desmume2015 or melonds
+    EJS_core = 'n64';
+      
+    // URL to Game rom
+    EJS_gameUrl = 'https://jjmtsmash.000webhostapp.com/JJMTSmash.z64';
+    
+    EJS_loadStateURL = "GroupProject.state";
+    
+    EJS_defaultOptions = {
+  'save-state-slot': 1,
+  'save-state-location': 'browser',
+  'mupen64plus-43screensize': '320x240',
+  'mupen64plus-Framerate': 'Fullspeed',
+  'mupen64plus-astick-sensitivity': '50',
+  'fps': 'show'
+};
+
+    EJS_defaultControls = {
+        0: {
+            0: {
+                'value': 'z',
+                'value2': ''
+            },
+            1: {
+                'value': 'x',
+                'value2': ''
+            },
+            2: {
+                'value': '',
+                'value2': ''
+            },
+            3: {
+                'value': 'grave accent',
+                'value2': ''
+            },
+            4: {
+                'value': '1',
+                'value2': ''
+            },
+            5: {
+                'value': '2',
+                'value2': ''
+            },
+            6: {
+                'value': '3',
+                'value2': ''
+            },
+            7: {
+                'value': '4',
+                'value2': ''
+            },
+            8: {
+                    'value': '',
+                'value2': ''
+            },
+            9: {
+                'value': '',
+                'value2': ''
+            },
+            10: {
+                'value': 'q',
+                'value2': ''
+            },
+            11: {
+                'value': 'e',
+                'value2': ''
+            },
+            12: {
+                'value': 'c',
+                'value2': ''
+            },
+            13: {
+                'value': '',
+                'value2': ''
+            },
+            14: {
+                'value': '',
+                'value2': 'LEFT_STICK',
+            },
+            15: {
+                'value': '',
+                'value2': 'RIGHT_STICK',
+            },
+            16: {
+                'value': 'd',
+                'value2': ''
+            },
+            17: {
+                'value': 'a',
+                'value2': ''
+            },
+            18: {
+                'value': 's',
+                'value2': ''
+            },
+            19: {
+                'value': 'w',
+                'value2': ''
+            },
+            20: {
+                'value': 'r',
+                'value2': ''
+            },
+            21: {
+                'value': 'f',
+                'value2': ''
+            },
+            22: {
+                'value': 'v',
+                'value2': ''
+            },
+            23: {
+                'value': 'space',
+                'value2': ''
+            },
+            24: {
+                'value': ''
+            },
+            25: {
+                'value': ''
+            },
+            26: {
+                'value': ''
+            },
+            27: {},
+            28: {},
+            29: {},
+        },
+        1: {
+            0: {
+                'value': 'single quote',
+                'value2': ''
+            },
+            1: {
+                'value': 'open bracket',
+                'value2': ''
+            },
+            2: {
+                'value': '',
+                'value2': ''
+            },
+            3: {
+                'value': 'backspace',
+                'value2': ''
+            },
+            4: {
+                'value': 'equal sign',
+                'value2': ''
+            },
+            5: {
+                'value': 'forward slash',
+                'value2': ''
+            },
+            6: {
+                'value': 'semi-colon',
+                'value2': ''
+            },
+            7: {
+                'value': 'enter',
+                'value2': ''
+            },
+            8: {
+                    'value': '',
+                'value2': ''
+            },
+            9: {
+                'value': '',
+                'value2': ''
+            },
+            10: {
+                'value': 'l',
+                'value2': ''
+            },
+            11: {
+                'value': 'close braket',
+                'value2': ''
+            },
+            12: {
+                'value': 'back slash',
+                'value2': ''
+            },
+            13: {
+                'value': '',
+                'value2': ''
+            },
+            14: {
+                'value': '',
+                'value2': 'LEFT_STICK',
+            },
+            15: {
+                'value': '',
+                'value2': 'RIGHT_STICK',
+            },
+            16: {
+                'value': 'right arrow',
+                'value2': ''
+            },
+            17: {
+                'value': 'left arrow',
+                'value2': ''
+            },
+            18: {
+                'value': 'down arrow',
+                'value2': ''
+            },
+            19: {
+                'value': 'up arrow',
+                'value2': ''
+            },
+            20: {
+                'value': 'dash',
+                'value2': ''
+            },
+            21: {
+                'value': 'period',
+                'value2': ''
+            },
+            22: {
+                'value': 'comma',
+                'value2': ''
+            },
+            23: {
+                'value': 'shift',
+                'value2': ''
+            },
+            24: {
+                'value': ''
+            },
+            25: {
+                'value': ''
+            },
+            26: {
+                'value': ''
+            },
+            27: {},
+            28: {},
+            29: {},
+        },
+        2: {},
+        3: {}
+    }
+    
+    // Path to the data directory
+    EJS_pathtodata = 'https://cdn.jsdelivr.net/gh/jackofalltrades43/emulatorjs@main/data/';
+</script>
+<script src='https://cdn.jsdelivr.net/gh/jackofalltrades43/emulatorjs@main/data/loader.js'
+></script>
+
+
